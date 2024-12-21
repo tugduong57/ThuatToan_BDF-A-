@@ -80,7 +80,7 @@ with open("dothi2.txt") as inp:
         x = inp.readline()
 
 # Chạy A* từ start đến điểm trung gian
-mid_point = list(Nodes.keys())[7]  
+mid_point = list(Nodes.keys())[n-3]  
 path1 = a_star(start, mid_point, Nodes, T, H)
 print("Đường đi từ {} đến {} theo A_star:".format(start, mid_point))
 print(path1)
